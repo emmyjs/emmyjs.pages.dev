@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom/server'
+import { load, html } from 'emmy-dom'
 import './Search'
 
 export function header ({ el }) {
@@ -52,5 +52,3 @@ export function header ({ el }) {
     </nav>
   `
 }
-
-load(header, 'Header')

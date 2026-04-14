@@ -1,8 +1,4 @@
-import { load, html, Emmy } from 'emmy-dom/server'
-import { saveDocumentationRoutes } from '../emmydocs'
-import * as markdown from './Markdown'
-
-saveDocumentationRoutes(Emmy, Object.keys(markdown))
+import { load, html, Emmy } from 'emmy-dom'
 
 export function app ({ el }) {
   el.className = 'flex flex-col justify-space-between gap-2 text-center w-full h-full box-border'
@@ -20,5 +16,3 @@ export function app ({ el }) {
     <Footer />
   `
 }
-
-export const App = await load(app, 'App')

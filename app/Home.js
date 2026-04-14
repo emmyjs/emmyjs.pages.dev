@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom/server'
+import { load, html } from 'emmy-dom'
 import './components/Counter'
 
 export function home ({ el }) {
@@ -28,5 +28,3 @@ export function home ({ el }) {
     </main>
   `
 }
-
-load(home, 'Home')

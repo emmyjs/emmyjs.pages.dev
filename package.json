@@ -8,7 +8,7 @@
     "build": "npm run ssr && vite build",
     "preview": "vite preview",
     "watch": "watch 'npm run ssr' ./app",
-    "ssr": "bun main.js",
+    "ssr": "bun emmy.config.js",
     "co": "npm run build && git add . && sui-mono commit && git push",
     "prod": "npm run build && npm run preview"
   },

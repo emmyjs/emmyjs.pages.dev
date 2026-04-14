@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom/server'
+import { load, html } from 'emmy-dom'
 import MiniSearch from 'minisearch'
 
 const Emmy = {}
@@ -77,7 +77,7 @@ export function search ({ el }) {
                     </svg>
                   </a>
                 </li>
-              `).join('')}
+              `)}
             </ul>
           </div>
         </article>
@@ -85,5 +85,3 @@ export function search ({ el }) {
     </div>
   `
 }
-
-load(search, 'Search')

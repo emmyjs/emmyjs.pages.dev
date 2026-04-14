@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom/server'
+import { load, html } from 'emmy-dom'
 
 export function about ({ el }) {
   el.className = 'flex flex-col justify-between items-center text-center w-full gap-6'
@@ -49,5 +49,3 @@ export function about ({ el }) {
     </main>
   `
 }
-
-load(about, 'About')

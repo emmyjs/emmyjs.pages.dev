@@ -1,4 +1,4 @@
-import { load } from 'emmy-dom/server'
+import { load } from 'emmy-dom'
 
 export function pill ({ el, props }) {
   const { type } = props()
@@ -17,5 +17,3 @@ export function pill ({ el, props }) {
 
   return type().charAt(0).toUpperCase() + type().slice(1)
 }
-
-load(pill, 'Pill')

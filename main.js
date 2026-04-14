@@ -28,6 +28,17 @@ build({
     function useRef(value) {
       return { current: value }
     }
+
+    function useFeatureStatus(el) {
+      const [features, setFeatures] = el.useState([])
+      el.useEffect(async () => {
+        const res = await fetch('https://raw.githubusercontent.com/emmyjs/emmy-dom/refs/heads/main/docs/feature-status.json')
+        const data = await res.json()
+        setFeatures(data.features)
+      }, ['didMount'])
+      return features
+    }
+    window.useFeatureStatus = useFeatureStatus
   `,
   generators: {
     about, app, docs, home, ...markdown, status,

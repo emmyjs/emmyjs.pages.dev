@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom/server'
+import { load, html } from 'emmy-dom'
 import './components/FeatureList'
 
 export function status({ el }) {
@@ -43,5 +43,3 @@ export function status({ el }) {
     </a>
   `
 }
-
-load(status, 'Status')

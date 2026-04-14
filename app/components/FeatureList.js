@@ -1,7 +1,7 @@
-import { load, html } from 'emmy-dom/server'
+import { html } from 'emmy-dom'
 import './Row'
 
-export function featureList({ el }) {
+function useFeatureStatus(el) {
   const [features, setFeatures] = el.useState([])
 
   el.useEffect(async () => {
@@ -9,6 +9,12 @@ export function featureList({ el }) {
     const data = await res.json()
     setFeatures(data.features)
   }, ['didMount'])
+  
+  return features
+}
+
+export function featureList({ el }) {
+  const features = useFeatureStatus(el)
 
   return () => {
     if (features().length === 0) {
@@ -18,11 +24,11 @@ export function featureList({ el }) {
     }
     return html`
       <ul role='list' class='max-w-lg w-full divide-y divide-gray-200 dark:divide-gray-700'>
-        ${features().map(f => html`<Row status='${f.status}'>${f.name}</Row>`).join('')}
+        ${features().map(f => html`
+          <Row status='${f.status}'>${f.name}</Row>
+        `)}
         <Row status='experimental'>CLI create-emmy</Row>
       </ul>
     `
   }
 }
-
-load(featureList, 'FeatureList')

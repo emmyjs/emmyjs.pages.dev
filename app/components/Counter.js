@@ -1,4 +1,4 @@
-import { load, html, useRef } from 'emmy-dom/server'
+import { load, html, useRef } from 'emmy-dom'
 import Toastify from 'toastify-js'
 import 'toastify-js/src/toastify.css'
 
@@ -48,5 +48,3 @@ export function counter ({ el }) {
     </div>
   `
 }
-
-load(counter, 'Counter')
