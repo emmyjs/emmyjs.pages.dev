@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom'
+import { html } from 'emmy-dom'
 import './components/FeatureList'
 
 export function status({ el }) {

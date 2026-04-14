@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom'
+import { html } from 'emmy-dom'
 import './components/Counter'
 
 export function home ({ el }) {

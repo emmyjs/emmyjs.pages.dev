@@ -1,4 +1,4 @@
-import { load, html, useRef } from 'emmy-dom'
+import { html, useRef } from 'emmy-dom'
 import Toastify from 'toastify-js'
 import 'toastify-js/src/toastify.css'
 

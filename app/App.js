@@ -1,4 +1,4 @@
-import { load, html, Emmy } from 'emmy-dom'
+import { html, Emmy } from 'emmy-dom'
 
 export function app ({ el }) {
   el.className = 'flex flex-col justify-space-between gap-2 text-center w-full h-full box-border'

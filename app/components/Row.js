@@ -1,4 +1,4 @@
-import { load, html } from 'emmy-dom'
+import { html } from 'emmy-dom'
 import './Pill'
 
 export function row ({ props, children }) {

@@ -1,7 +1,5 @@
-import { load, html } from 'emmy-dom'
+import { html, Emmy } from 'emmy-dom'
 import MiniSearch from 'minisearch'
-
-const Emmy = {}
 
 export function search ({ el }) {
   const [modal, setModal] = el.useState(false)

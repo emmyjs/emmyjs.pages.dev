@@ -1,4 +1,4 @@
-import { html, load } from 'emmy-dom'
+import { html } from 'emmy-dom'
 
 export function footer ({ el }) {
   el.className = 'dark:text-white text-slate-900 text-center p-6 w-full flex justify-center gap-0 sm:justify-between'

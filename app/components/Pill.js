@@ -1,4 +1,4 @@
-import { load } from 'emmy-dom'
+
 
 export function pill ({ el, props }) {
   const { type } = props()
