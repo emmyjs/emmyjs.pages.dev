@@ -12,8 +12,8 @@ import { home } from './app/Home'
 import { status } from './app/Status'
 import { saveMarkdown } from './emmydocs'
 import * as markdown from './app/Markdown'
-import { footer } from 'app/components/Footer'
-import { featureList } from 'app/components/FeatureList'
+import { footer } from './app/components/Footer'
+import { featureList } from './app/components/FeatureList'
 
 await saveMarkdown(Emmy, Object.keys(markdown))
 
