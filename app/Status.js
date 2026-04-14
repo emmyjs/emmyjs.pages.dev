@@ -1,24 +1,12 @@
 import { load, html } from 'emmy-dom/server'
-import './components/Row'
+import './components/FeatureList'
 
 export function status({ el }) {
   el.className = 'flex flex-col justify-center items-center text-center w-full h-fit mb-[10%] gap-4'
 
   return html`
     <h1 class='text-3xl md:text-5xl font-extrabold text-purple-600 dark:text-purple-300 leading-relaxed'>Features Status</h1>
-    <ul role='list' class='max-w-lg divide-y divide-gray-200 dark:divide-gray-700'>
-      <Row status='stable'>Class components</Row>
-      <Row status='stable'>Functional Components</Row>
-      <Row status='stable'>Declarative props</Row>
-      <Row status='stable'>Emmy Hooks</Row>
-      <Row status='stable'>Auto-close tags</Row>
-      <Row status='experimental'>JSX in Client Components</Row>
-      <Row status='experimental'>Emmy Router: Routes</Row>
-      <Row status='unstable'>Emmy Router: SPA Navigation</Row>
-      <Row status='unstable'>Prerendering</Row>
-      <Row status='planned'>Server-side rendering</Row>
-      <Row status='experimental'>CLI create-emmy</Row>
-    </ul>
+    <FeatureList />
     <h2 class='text-2xl font-bold mt-8'>Statuses legend</h2>
     <ul role='list' class='max-w-lg md:max-w-4xl divide-y divide-gray-200 dark:divide-gray-700'>
       <li class='flex items-center py-2 flex-col md:flex-row'>
