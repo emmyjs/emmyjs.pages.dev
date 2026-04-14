@@ -2,6 +2,12 @@ import { Emmy } from 'emmy-dom'
 
 export function index ({ el }) {
   el.className = 'flex flex-col justify-center items-center text-center max-w-[90%] lg:max-w-full h-fit box-border'
+  el.useEffect(() => {
+    if (window.hljs) {
+      window.hljs.highlightAll()
+    }
+  }, [])
+
   return Emmy.markdown.index
 }
 

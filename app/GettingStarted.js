@@ -1,6 +1,6 @@
 import { html } from 'emmy-dom'
 
-export function docs ({ el }) {
+export function gettingStarted ({ el }) {
   el.className = 'flex flex-col justify-center items-center text-center w-full h-fit box-border'
 
   return html`

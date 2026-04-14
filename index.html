@@ -21,8 +21,7 @@
     <emmy-header></emmy-header>
     <emmy-route href="/" to="Home"></emmy-route>
     <emmy-route href="/our-story" to="About"></emmy-route>
-    <emmy-route href="/getting-started" to="Docs"></emmy-route>
-    <emmy-route href="/docs" to="Docs"></emmy-route>
+    <emmy-route href="/getting-started" to="GettingStarted"></emmy-route>
     <emmy-route href="/status" to="Status"></emmy-route>
     <emmy-route href="/documentation/cli" to="Cli"></emmy-route>
 <emmy-route href="/documentation" to="Index"></emmy-route>
@@ -131,9 +130,9 @@
         element.connectedCallback()
       })
     
-      import { docs as _docs } from './app/Docs.js'
-      load(_docs, 'Docs')
-      document.querySelectorAll('emmy-docs').forEach((element) => {
+      import { gettingStarted as _gettingStarted } from './app/GettingStarted.js'
+      load(_gettingStarted, 'GettingStarted')
+      document.querySelectorAll('emmy-gettingstarted').forEach((element) => {
         element.connectedCallback()
       })
     
