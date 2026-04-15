@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "ignoreDeprecations": "5.0",
-    "paths": {
-      "@emmy-dom/*": ["./node_modules/emmy-dom/*"]
-    }
-  }
-}

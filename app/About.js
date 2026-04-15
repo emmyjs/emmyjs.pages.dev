@@ -49,3 +49,5 @@ export function about ({ el }) {
     </main>
   `
 }
+
+about.static = true

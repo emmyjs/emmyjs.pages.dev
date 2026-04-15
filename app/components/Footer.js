@@ -11,3 +11,5 @@ export function footer ({ el }) {
     <p>Made with <span class='text-red-500'>&#9829;</span> by <a href='https://www.linkedin.com/in/eanorambuena/' target='_blank' rel='noopener noreferrer'>@eanorambuena</a></p>
   `
 }
+
+footer.static = true

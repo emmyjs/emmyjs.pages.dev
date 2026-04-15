@@ -7,7 +7,7 @@ import { pill } from './app/components/Pill'
 import { row } from './app/components/Row'
 import { search } from './app/components/Search'
 import { underConstruction } from './app/components/UnderConstruction'
-import { docs } from './app/Docs'
+import { gettingStarted } from './app/GettingStarted'
 import { home } from './app/Home'
 import { status } from './app/Status'
 import { saveMarkdown } from './emmydocs'
@@ -41,7 +41,7 @@ build({
     window.useFeatureStatus = useFeatureStatus
   `,
   generators: {
-    about, app, docs, home, ...markdown, status,
+    about, app, gettingStarted, home, ...markdown, status,
     counter, header, pill, row, search, underConstruction, footer, featureList
   },
   template: './template.html'
